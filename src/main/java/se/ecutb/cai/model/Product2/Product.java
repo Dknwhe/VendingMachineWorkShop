@@ -1,4 +1,4 @@
-package se.ecutb.cai.model;
+package se.ecutb.cai.model.Product2;
 
 public abstract class Product {
 
@@ -25,7 +25,7 @@ public abstract class Product {
         return id;
     }
 
-    abstract String use();
+   public abstract String use();
 
     public abstract String examine();
 }

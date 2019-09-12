@@ -1,8 +1,11 @@
 package se.ecutb.cai;
 
-import org.junit.Before;
 import org.junit.Test;
 import se.ecutb.cai.model.*;
+import se.ecutb.cai.model.Product2.Dryck;
+import se.ecutb.cai.model.Product2.Frukt;
+import se.ecutb.cai.model.Product2.Mat;
+import se.ecutb.cai.model.Product2.Product;
 
 import static org.junit.Assert.*;
 

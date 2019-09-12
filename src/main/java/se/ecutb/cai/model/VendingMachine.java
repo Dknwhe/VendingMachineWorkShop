@@ -1,5 +1,7 @@
 package se.ecutb.cai.model;
 
+import se.ecutb.cai.model.Product2.Product;
+
 public interface VendingMachine {
 
     void addCurrency (int amount); // Lä    gga till i insättningspoolen (moneyPool).

@@ -1,4 +1,4 @@
-package se.ecutb.cai.model;
+package se.ecutb.cai.model.Product2;
 
 public class Mat extends Product {
 

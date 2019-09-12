@@ -1,10 +1,15 @@
 package se.ecutb.cai.model;
 
 
+import se.ecutb.cai.model.Product2.Dryck;
+import se.ecutb.cai.model.Product2.Frukt;
+import se.ecutb.cai.model.Product2.Mat;
+import se.ecutb.cai.model.Product2.Product;
+
 public class VendingMachineImplements implements VendingMachine {
 
     private int []  buy = { 1, 5, 10, 20, 50, 100, 500, 1000};
-    private Product [] products = {new Mat("Chips", 20, 11, 150),
+    private Product[] products = {new Mat("Chips", 20, 11, 150),
             new Frukt("Äpple", 5, 22, "Royal Gala"),
             new Dryck("Cola", 15, 33, 330 )
     } ;
