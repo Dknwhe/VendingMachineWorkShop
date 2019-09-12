@@ -25,15 +25,6 @@ public abstract class Product {
         return id;
     }
 
-    public Product buy(int moneyPool){
-        if(getPrice() > moneyPool){
-            return null;
-        }
-        else{
-            return this;
-        }
-    }
-
     abstract String use();
 
     public abstract String examine();

@@ -11,27 +11,17 @@ public class VendingMachineImplements implements VendingMachine {
     private int moneyPool;
 
 
+
     public VendingMachineImplements(int[] buy, Product[] products, int moneyPool) {
         this.buy = buy;
         this.products = products;
         this.moneyPool = moneyPool;
     }
 
-    public int[] getBuy() {
-        return buy;
-    }
-
-    public Product[] getProduct() {
-        return products;
-    }
-
-    public int getMoneyPool() {
-        return moneyPool;
-    }
 
     public void addCurrency(int amount){
         for(int i : buy){
-            if(buy[i] == amount){
+            if(i == amount){
                 moneyPool = moneyPool + amount;
             }
         }
@@ -41,12 +31,15 @@ public class VendingMachineImplements implements VendingMachine {
         switch(choice){
             case 1: bought = products[0];
             moneyPool = moneyPool - bought.getPrice();
+                System.out.println(bought.use());
             break;
             case 2: bought = products[1];
                 moneyPool = moneyPool - bought.getPrice();
+                System.out.println(bought.use());
             break;
             case 3: bought = products[2];
                 moneyPool = moneyPool - bought.getPrice();
+                System.out.println(bought.use());
                 break;
         }
         return bought;
@@ -57,6 +50,7 @@ public class VendingMachineImplements implements VendingMachine {
         moneyPool = 0;
         return växel;
     }
+
 
     public String getDescription (int choice){
         Product bought;
@@ -79,7 +73,7 @@ public class VendingMachineImplements implements VendingMachine {
     }
 
     public int getBalance(){
-        return 0;
+        return moneyPool;
     }
 
     public String[] getProducts(){
@@ -89,6 +83,8 @@ public class VendingMachineImplements implements VendingMachine {
         }
         return get;
     }
+
+
 
 
 

@@ -14,7 +14,7 @@ public class Mat extends Product {
     }
 
     public String examine(){
-        return "Namn: " + getName() + " Pris: " + getPrice() + " Vikt: " + getVikt();
+        return "Namn: " + getName() + " Pris: " + getPrice() + " Vikt: " + getVikt() + " g";
     }
 
     public String use(){

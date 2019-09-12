@@ -15,7 +15,7 @@ public class Dryck extends Product {
 
     @Override
     public String examine(){
-        return "Name: " + getName() + " Price: " + getPrice() + " volume: " + getVolume();
+        return "Name: " + getName() + " Price: " + getPrice() + " volume: " + getVolume() + " ml";
     }
 
     @Override
